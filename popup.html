@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Auto Tag Tool</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <div id="wt-wrapper">
+      <!-- Header -->
+      <header id="wt-header">
+        <h1>Basic Facebook Auto Tag - V0.0.1</h1>
+      </header>
+
+      <!-- Notification -->
+      <div id="notify" class="alert"></div>
+
+      <!-- Form Section -->
+      <section id="wt-containers">
+        <!-- Input Information -->
+        <div class="wt-form">
+          <label for="wt-info">Thông Tin</label>
+          <input
+            type="text"
+            id="wt-info"
+            placeholder="1000xxxxxxxx|Nguyễn Văn A"
+          />
+        </div>
+
+        <!-- Input Content -->
+        <div class="wt-form mt-4">
+          <label for="wt-content">Nội Dung</label>
+          <textarea
+            id="wt-content"
+            placeholder="Nhập nội dung cần mentions, phân tách bằng dấu phẩy..."
+          ></textarea>
+        </div>
+
+        <!-- Fast Mode Toggle -->
+        <div class="wt-form mt-4">
+          <label class="switch">
+            <input type="checkbox" id="fast" />
+            <span class="slider round"></span>
+          </label>
+          <span>Bật chế độ nhanh</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="wt-buttons">
+          <button class="button" id="wt-reset">Dừng</button>
+          <button class="button primary" id="wt-button">Bắt Đầu</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

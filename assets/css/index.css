@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    width: 250px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+#wt-wrapper {
+    padding: 5px;
+}
+
+/* Header */
+#wt-header h1 {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+/* Info Section */
+#wt-info {
+    font-size: 12px;
+}
+
+/* Buttons */
+.button {
+    font-family: Roboto, system-ui, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    min-width: 5.14em;
+    padding: 8px 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: white;
+    color: #1a73e8;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px 0 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(66, 133, 244, 0.04);
+    border-color: #d2e3fc;
+}
+
+.button.primary {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.button.primary:hover {
+    background: rgba(26, 115, 232, 0.9);
+    box-shadow: 0 1px 2px rgba(66, 133, 244, 0.3), 0 1px 3px rgba(66, 133, 244, 0.15);
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.wt-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+.wt-buttons p {
+    margin: 10px 0 5px 10px;
+}
+
+/* Input and Textarea */
+input, textarea {
+    border: 2px solid rgba(26, 108, 232, 0.4);
+    padding: 8px;
+    border-radius: 7px;
+    display: block;
+    width: 224px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #719ece;
+    box-shadow: 0 0 10px #719ece;
+}
+
+/* Notifications */
+#notify {
+    display: none;
+}
+
+.alert {
+    border-radius: 7px;
+    padding: 6px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.alertCheckbox {
+    display: none;
+}
+
+:checked + .alert {
+    display: none;
+}
+
+.alertText {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+.alertClose {
+    float: right;
+    padding-top: 2px;
+    font-size: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Alert Types */
+.info {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #999;
+}
+
+.success {
+    background-color: #efe;
+    border: 1px solid #ded;
+    color: #9a9;
+}
+
+.notice {
+    background-color: #eff;
+    border: 1px solid #dee;
+    color: #9aa;
+}
+
+.warning {
+    background-color: #fdf7df;
+    border: 1px solid #feec6f;
+    color: #c9971c;
+}
+
+.error {
+    background-color: #fee;
+    border: 1px solid #edd;
+    color: #a66;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: transform 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(10px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
